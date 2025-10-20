@@ -21,7 +21,7 @@ if st.button("Start Debate") and question.strip() != "":
     for i in range(rounds):
         # ChatGPT-1 responds
         resp1 = client.chat.completions.create(
-            model="gpt-5",
+            model="gpt-4o-mini",
             messages=chat1,
             temperature=0.7
         )
@@ -31,7 +31,7 @@ if st.button("Start Debate") and question.strip() != "":
 
         # ChatGPT-2 responds
         resp2 = client.chat.completions.create(
-            model="gpt-5",
+            model="gpt-4o-mini",
             messages=chat2,
             temperature=0.7
         )
